@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -58,9 +59,12 @@ export default function Home() {
                 <Link href="#pricing">Pricing</Link>
                 <Link href="#about">About</Link>
               </nav>
-              <Button className="bg-white text-primary">
-                <Link href="/dashboard">Login</Link>
-              </Button>
+              <div className="flex items-center justify-center gap-4">
+                <ModeToggle />
+                <Button className="bg-white text-primary">
+                  <Link href="/dashboard">Login</Link>
+                </Button>
+              </div>
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl text-center">
